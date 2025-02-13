@@ -61,6 +61,12 @@ a{
   color: #4D4D4D;
   
   margin: 0px 40px;
+  transition: transform .1s ease-in-out;
+}
+
+.link:hover {
+  transform: translate(0px, -4px);
+  text-decoration: underline;
 }
 
 .main1{
@@ -113,8 +119,6 @@ a{
 
   text-shadow: 1px 1px 100px rgb(172, 172, 172);
 
-
-  
 }
 
 .mainContainer > p{
@@ -124,7 +128,7 @@ a{
   text-align: center;
 }
 
-.mainContainer > button{
+#mainBtn{
   width: 500px;
   height: 50px;
 
@@ -132,6 +136,7 @@ a{
   border-radius: 5px;
   font-size: 20px;
   font-weight: 800;
+  cursor: pointer;
 }
 
 .main2{
@@ -149,6 +154,18 @@ a{
 
 }
 
+.main2 > div{
+
+  height: 520px;
+  width: 530px;
+
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+
+  flex-direction: column;
+}
+
 .main2 > img{
   height: 500px;
   width: 670px;
@@ -159,23 +176,12 @@ a{
   margin-right: 110px;
 }
 
-.main2 > div{
-
-  height: 500px;
-  width: 530px;
-
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-
-  flex-direction: column;
-}
-
 .main2 > div > h1{
   font-size: 32px;
   font-weight: bold;
 
   margin-bottom: 32px;
+  
 }
 
 .main2 > div > p{
@@ -186,11 +192,10 @@ a{
 }
 
 .main2 > div > .exploreDiv{
-  height: 100%;
   width: 85%;
   background-color: #FFCC8D;
 
-  padding: 32px 37px;
+  padding: 26px 37px;
 
   border-radius: 5px;
 }
@@ -203,12 +208,12 @@ a{
 
   width: 400px;
 
-  line-height: 30px;
+  line-height: 40px;
 
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
-.main2 > div > .exploreDiv > button{
+.main2 > div > .exploreDiv > #link > button{
   height: 55px;
   width: 200px;
 
@@ -220,6 +225,77 @@ a{
   font-size: 16px;
   font-weight: 600;
 }
+
+.main3{
+  /* height: 81.5vh; */
+  background-color: #FFF7ED;
+  color: black;
+  border-radius: 5px;
+
+
+  padding: 0px 100px 86px 80px;
+
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+
+  flex-direction: column;
+}
+
+.main3 > h1{
+  font-size: 32px;
+  font-weight: 700;
+
+  margin-top: 60px ;
+}
+
+.badgeDiv{
+  margin-top: 34px;
+  display: flex;
+}
+
+.badge{
+   background-color: #FFEAD0;
+   color: #686868;
+
+   height: 35px;
+   width: 95px;
+   border-radius: 5px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+
+   font-size: 16px;
+   font-weight: 500;
+
+   cursor: pointer;
+   margin-right: 24px;
+
+}
+
+.vanContainer{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 35px;
+  gap: 50px;
+  flex: 1;
+}
+
+.vanCard{
+  margin: 30px; 
+}
+
+.vanImg{
+  width: 100%;
+  max-height: 230px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+
 
 .footer{
   height: 7vh;

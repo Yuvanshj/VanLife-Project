@@ -1,5 +1,6 @@
 import React from "react";
 import {imgAbout} from "../Assets/index"
+import { Link } from "react-router-dom"
 
 export default function About(){
     return(
@@ -20,7 +21,9 @@ export default function About(){
               <p id="btnTitle">Your destination is waiting.
               Your van is ready.</p>
 
-              <button>Explore our vans</button>
+              <Link id="link" to={'/vans'}>
+                <button >Explore our vans</button>
+              </Link>
             </div>
           
         </div>
