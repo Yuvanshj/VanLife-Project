@@ -2,6 +2,8 @@ import React from "react";
 import Badge from "../Components/Badge/Badge";
 import VanCard from "../Components/VanCard";
 
+import { Link } from "react-router-dom"
+
 import "../../Server/server"
 
 export default function Vans(){
@@ -27,7 +29,11 @@ export default function Vans(){
 
                 <div className="vanContainer">
                     {vanData.map((van)=>{
-                        return (<VanCard key={van.id} name={van.name} imageUrl={van.imageUrl} price={van.price} type={van.type} />)
+                        return (
+                            <Link to={`/vans/${van.id}`}>
+                                <VanCard id={van.id} name={van.name} imageUrl={van.imageUrl} price={van.price} type={van.type} />
+                            </Link>
+                    )
                     })}
                 </div>
             </main>

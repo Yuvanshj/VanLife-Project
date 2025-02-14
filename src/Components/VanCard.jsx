@@ -1,10 +1,10 @@
 import React from "react";
 import Badge from "./Badge/Badge";
 
-export default function VanCard({ name , price , imageUrl , type  }){
+export default function VanCard({ name , price , imageUrl , type , id }){
     return(
         <>
-        <div className="vanCard">
+        <div key={id} className="vanCard">
             <img className="vanImg" src={imageUrl} alt="Vans" />
 
             <div className="vanDetails">

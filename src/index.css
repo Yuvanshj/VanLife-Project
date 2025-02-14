@@ -304,7 +304,7 @@
     }
 
     .vanCard{
-      /* margin: 30px;  */
+      margin: 20px; 
       /* padding: 10px; */
     }
 
@@ -370,9 +370,92 @@
       text-shadow: 1px 1px 45px rgb(255, 255, 255);
     }
 
+    .van-detail-container{
+      
+      height: 75vh;
+      background-color: #FFF7ED;
+
+      padding: 50px 100px;
+
+      color: black;
+    }
+
+    .back-link{
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      transition: transform .1s ease-in-out;
+    }
+    
+    .back-link:hover{
+      transform: translate(0px, -2px);
+      text-decoration: underline;
+    }
+
+    .arrow{
+      margin-right: 5px;
+    }
+
+    .van-detail-container-2{
+      margin-top: 60px;
+    }
+
+    .van-detail{
+      display: flex;
+    }
+
+    .van-detail > img{
+      width: 500px;
+      border-radius: 5px;
+
+      margin: 0px 150px 0px 60px; 
+    }
+
+    .van-detail-2{
+      padding-right: 50px;
+    }
+
+    .selectedVanBadge{
+      margin: 5px 0px 30px 0px;
+    }
+
+    .vanName{
+      font-size: 36px;
+
+      padding: 0px 0px 20px 0px;
+    }
+
+    .van-price{
+      font-size: 28px;
+
+      padding-bottom: 40px;
+    }
+
+    .van-price > span{
+      font-weight: 600;
+    }
+
+    .vanDescription{
+      font-size: 20px;
+      padding-bottom: 80px;
+      font-weight: 400;
+    }
+
+    .link-button{
+      height: 75px;
+      width: 100%;
+
+      border-radius: 5px;
+
+      background-color: #FF8C38;
+      color: #FFFFFF;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
 
   body {
     height: 100vh;
@@ -654,4 +737,4 @@
 
 @media (max-width: 1024px) {
 
- } 
+ }  */
