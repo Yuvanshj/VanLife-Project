@@ -8,12 +8,16 @@ export default function VanCard({ name , price , imageUrl , type  }){
             <img className="vanImg" src={imageUrl} alt="Vans" />
 
             <div className="vanDetails">
-                <div>
-                    <p>{name}</p>
-                    <Badge className={`badge-${type}`}>{type}</Badge>
+                <div className="vanTitleContainer">
+                    <p className="vanTitle">{name}</p>
+                    <Badge 
+                        className={`badge-${type}`}>
+                            {type.charAt(0).toUpperCase() + type.slice(1)}
+                    </Badge>
                 </div>
-                <div>
-                    <p>${price}</p>
+
+                <div className="vanPriceContainer">
+                    <p className="vanPrice">${price}</p>
                     <p>/day</p>
                 </div>
             </div>
@@ -21,3 +25,5 @@ export default function VanCard({ name , price , imageUrl , type  }){
         </>
     )
 }
+
+
