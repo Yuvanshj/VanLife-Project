@@ -298,14 +298,14 @@
     .vanContainer{
       display: flex;
       flex-wrap: wrap;
-      margin-top: 35px;
+      margin: 35px 0px 0px 30px;
       gap: 50px;
       flex: 1;
     }
 
     .vanCard{
-      margin: 30px; 
-      padding: 10px;
+      /* margin: 30px;  */
+      /* padding: 10px; */
     }
 
     .vanCard > .vanImg{
@@ -374,10 +374,12 @@
 
 
 @media (max-width: 480px) {
+
   body{
     height: 100vh;
+    width: 90%;
     background-color: #242424;
-    padding: 0px 10px;
+    overflow-x: hidden;
   }
 
   a{
@@ -388,6 +390,8 @@
   .navbar{
     padding: 30px 80px 25px 80px;
     margin-bottom: 5px;
+
+    width: 90%;
 
     background-color: #FFF7ED;
 
@@ -426,7 +430,7 @@
   }
 
   .main1{
-    height: 81.5vh;
+    height: 100%;
     background-color: #FFF7ED;
 
     padding: 0px 80px 20px 80px;
@@ -460,7 +464,7 @@
 
   .mainContainer > h1 {
     color: #FFFFFF;
-    font-size: 80px;
+    font-size: 32px;
     line-height: 110px;
     
 
@@ -503,10 +507,13 @@
 
 
     padding: 0px 120px 20px 120px;
+    text-align: center;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    flex-direction: column;
 
   }
 
@@ -523,13 +530,12 @@
   }
 
   .main2 > img{
-    height: 500px;
-    width: 670px;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+    margin-bottom: 20px;
 
-    border-radius: 30px;
-
-    margin-right: 110px;
   }
 
   .main2 > div > h1{
@@ -547,14 +553,20 @@
     font-weight: 500;
   }
 
-  .main2 > div > .exploreDiv{
-    width: 85%;
+  .exploreDiv{
+    width: 100%;
     background-color: #FFCC8D;
 
-    padding: 26px 37px;
+    padding: 20px;
 
     border-radius: 5px;
   }
+
+  .exploreDiv {
+    
+    
+  }
+
 
   .exploreDiv > #btnTitle{
     color: #161616;
@@ -700,30 +712,98 @@
     /* line-height: 15px; */
   }
 
-  .footer{
-    height: 7vh;
+  .footer {
+
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
 
     display: flex;
     justify-content: center;
     align-items: center;
-
-    font-size: 16px;
-
-    width: 100%;
-
     position: fixed;
     bottom: 0;
     left: 0;
 
     color: #AAAAAA;
-    background-color: #252525;
   }
 
   .footer > div{
     text-shadow: 1px 1px 45px rgb(255, 255, 255);
   }
 
- }
+   body {
+    height: 100vh;
+    background-color: #242424;
+    padding: 0 10px;
+    overflow-x: hidden;
+  }
+
+  a {
+    text-decoration: none;
+    color: #4D4D4D;
+  }
+
+  .navbar {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #FFF7ED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .logoImg {
+    height: 20px;
+  }
+
+  .linkContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .link {
+    font-size: 16px;
+    font-weight: 600;
+    color: #4D4D4D;
+  }
+
+  .main1, .main2 {
+    height: auto;
+    padding: 10px;
+    background-size: cover;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .mainContainer > h1 {
+    font-size: 24px;
+    line-height: 1.2;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .mainContainer > p {
+    font-size: 16px;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  #mainBtn {
+    width: 100%;
+    max-width: 300px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+}
+
+
 
 
 @media (max-width: 1024px) {
