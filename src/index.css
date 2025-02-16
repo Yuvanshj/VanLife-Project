@@ -18,13 +18,16 @@
   border: 0;
 }
 
-@media (min-width: 1025px) { 
+/* @media (min-width: 1025px) {  */
+/* Media query for desktops starts herre */
   
   
     body{
-      height: 100vh;
       background-color: #242424;
       padding: 0px 200px;
+
+      height: 99vh;
+      
     }
 
     a{
@@ -70,6 +73,12 @@
     .link:hover {
       transform: translate(0px, -4px);
       text-decoration: underline;
+    }
+
+    .active-link{
+      font-weight: 600;
+      text-decoration: underline;
+      color: #000000;
     }
 
     .main1{
@@ -255,7 +264,7 @@
     .badgeDiv{
       margin: 34px 0px 0px 30px;
       display: flex;
-
+      align-items: center;
     }
 
     .badge{
@@ -277,7 +286,19 @@
 
       cursor: pointer;
       margin-right: 24px;
+    }
 
+    .simple:hover{
+      background-color: #E17654;
+      color: #FFEAD0;
+    }
+    .luxury:hover{
+      background-color: #161616;
+      color: #FFEAD0;
+    }
+    .rugged:hover{
+      background-color: #115E59;
+      color: #FFEAD0;
     }
 
     .badge-simple{
@@ -293,6 +314,26 @@
     .badge-luxury{
       background-color: #161616;
       color: #FFEAD0;
+    }
+
+    #clearFilter{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .clear-filter{
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      transition: transform .1s ease-in-out;
+
+      margin: 20px;
+    }
+
+    .clear-filter:hover{
+      transform: translate(0px, -2px);
+      text-decoration: underline;
     }
 
     .vanContainer{
@@ -358,10 +399,6 @@
 
       width: 100%;
 
-      position: fixed;
-      bottom: 0;
-      left: 0;
-
       color: #AAAAAA;
       background-color: #252525;
     }
@@ -385,6 +422,8 @@
       display: flex;
       align-items: center;
       transition: transform .1s ease-in-out;
+
+      margin-bottom: 20px;
     }
     
     .back-link:hover{
@@ -453,9 +492,114 @@
       font-weight: 600;
     }
 
-}
+    .host{
+      height: 72vh;
+      background-color: #FFF7ED;
 
-/* @media (max-width: 480px) {
+      padding: 50px 100px;
+
+      color: black;
+    }
+
+    .host-nav {
+      display: flex;
+    }
+  
+    .host-nav a {
+        text-decoration: none;
+        color: #4D4D4D;
+        font-weight: 600;
+        padding: 5px 20px;
+        font-size: 18px;
+    }
+    
+    .host-nav a:hover {
+        color: #161616;
+        text-decoration: underline;
+        font-weight: 600;
+    }
+
+    #hostVanNavbar{
+      padding-left: 70px;
+      display: flex;
+    }
+
+    .hostVanNavbarLinks{
+      margin-right: 20px;
+
+      font-size: 16px;
+    }
+
+    .hostVanLinkDetails{
+      margin: 20px 70px;
+    }
+
+    .hostVan{
+      padding: 50px; 
+    }
+
+    .hostVanCard{
+      /* width: 250px; */
+    
+      display: flex;
+      
+
+      background-color: #FFFFFF;
+      
+      padding: 18px 24px;
+      margin: 20px;
+    }
+
+    .hostVanCardImg{
+      height: 60px;
+
+      margin-right: 18px;
+
+      border-radius: 5px;
+    }
+
+    .hostVanCardDetails{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hostVanCardName{
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .hostVanDetails{
+      padding: 50px;
+    }
+
+    .hostVanDetail-1{
+      background-color: #FFFFFF;
+      padding: 5px 0px; 
+    }
+    .hostVanDetail-2{
+
+      display: flex;
+
+      margin: 50px;
+      padding: 20px;
+
+      border-radius: 5px;
+
+    }
+
+    .hostVanImg{
+      width: 250px;
+      margin-right: 100px;
+
+      border-radius: 5px;
+    }
+
+
+/* Media query for desktops ends here */
+/* } */
+
+/* 
+ @media (max-width: 480px) {
 
   body {
     height: 100vh;
@@ -733,8 +877,8 @@
   .footer > div {
     text-shadow: 1px 1px 45px rgb(255, 255, 255);
   }
-}
+} */
 
 @media (max-width: 1024px) {
 
- }  */
+ }  

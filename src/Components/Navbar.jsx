@@ -1,8 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom"
+import { Link , NavLink } from "react-router-dom"
 import {logo} from "../Assets/index"
 
+
+
 export default function Navbar(){
+
     return (
         <header className="navbar">
 
@@ -10,12 +13,25 @@ export default function Navbar(){
                 <img className="logoImg" src={logo} alt="Vanlife Logo" /> 
             </Link>
              
-           
-
             <div className="linkContainer">
                 
-                <Link className="link" to={"/about"}> About </Link>
-                <Link className="link" to={"/Vans"}> Vans </Link>
+                <NavLink 
+                    to={"/host"}
+                    end
+                    className={ ({isActive}) => isActive ? "link active-link" : "link" } 
+                    > 
+                        Host 
+                </NavLink>
+                <NavLink 
+                    className={ ({isActive}) => isActive ? "link active-link" : "link" }  
+                    to={"/about"}> 
+                        About 
+                </NavLink>
+                <NavLink 
+                    className={ ({isActive}) => isActive ? "link active-link" : "link" } 
+                    to={"/Vans"}>   
+                        Vans 
+                </NavLink>
 
             </div>
 

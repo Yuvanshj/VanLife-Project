@@ -3,7 +3,7 @@ import { useParams } from "react-router";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-import Badge from "../Components/Badge/Badge";
+import Badge from "../../Components/Badge/Badge";
 
 export default function VanDetail(){
 

@@ -1,11 +1,11 @@
 import React from "react"
 
-export default function Badge({children , className}){
+export default function Badge({children , className , onClick}){
 
     return (
         <>
-            <button className={`badge ${className}`}>
-            {children} 
+            <button onClick={onClick} className={`badge ${className}`}>
+                {children} 
             </button>
         </>
     )
