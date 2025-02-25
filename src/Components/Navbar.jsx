@@ -1,6 +1,7 @@
 import React from "react";
 import { Link , NavLink } from "react-router-dom"
 import {logo} from "../Assets/index"
+import { CgProfile } from "react-icons/cg";
 
 
 
@@ -32,6 +33,11 @@ export default function Navbar(){
                     to={"/Vans"}>   
                         Vans 
                 </NavLink>
+                <Link to="login" className="login-link">
+                    <div className="profile">
+                        <CgProfile id="profile-icon" />
+                    </div>
+                </Link>
 
             </div>
 

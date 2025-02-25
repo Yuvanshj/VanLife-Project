@@ -2,7 +2,7 @@ import React from "react";
 import Badge from "../../Components/Badge/Badge";
 import VanCard from "../../Components/VanCard";
 
-import { Link , useSearchParams} from "react-router-dom"
+import { Link , useSearchParams } from "react-router-dom"
 
 import "../../../Server/server"
 
@@ -29,20 +29,21 @@ export default function Vans(){
 
                 <div className="badgeDiv">
                     <Link to={'/vans?type=simple'}>
-                        <Badge className={'simple'}>Simple</Badge>
+                        <Badge className={`simple ${typeFilter === "simple" ? "selected" : ""}`}>Simple</Badge>
                     </Link>    
                     <Link to={'/vans?type=luxury'}>
-                        <Badge className={'luxury'} >Luxury</Badge>
+                        <Badge className={`luxury ${typeFilter === "luxury" ? "selected" : ""}`} >Luxury</Badge>
                     </Link>  
                     <Link to={'/vans?type=rugged'}>
-                        <Badge className={'rugged'} >Rugged</Badge>
+                        <Badge className={`rugged ${typeFilter === "rugged" ? "selected" : ""}`} >Rugged</Badge>
                     </Link>  
 
-                    <div id="clearFilter">    
+                    {typeFilter ?  <div id="clearFilter">    
                         <Link to={'/vans'}>
                               <p className="clear-filter"> clear filter</p>
                         </Link>
-                    </div>
+                    </div> : null}
+                   
                 </div>
 
                 <div className="vanContainer">
